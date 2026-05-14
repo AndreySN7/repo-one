@@ -18,7 +18,10 @@ public class Main {
 		int start = 0;
 		int end = input.length() - 1;
 		char[] result = input.toCharArray();
-		while (start <= end) {
+		for (int i = 0; i < input.length(); i++) {
+			if (start >= end) {
+				break;
+			}
 			if (!Character.isLetter(input.charAt(start))) {
 				start++;
 				continue;
