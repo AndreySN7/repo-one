@@ -9,7 +9,7 @@ public class Main {
 		System.out.println(reverseLetters(input));
 	}
 
-	private static String reverseLetters(String input) {
+	static String reverseLetters(String input) {
 		if (input == null || input.isEmpty()) {
 			return "";
 		}
